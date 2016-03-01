@@ -25,7 +25,11 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Stopwatch" id="ZXR-lc-9r9">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="Omr-ep-niP"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="Omr-ep-niP">
+                                            <connections>
+                                                <action selector="playButton:" destination="BYZ-38-t0r" id="1qO-qD-uAv"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -35,9 +39,17 @@
                                     <constraint firstAttribute="height" constant="44" id="Ben-4i-gJl"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem systemItem="stop" id="BtT-gb-mQZ"/>
+                                    <barButtonItem systemItem="stop" id="BtT-gb-mQZ">
+                                        <connections>
+                                            <action selector="stopButton:" destination="BYZ-38-t0r" id="hse-sV-9QV"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="coA-wO-fKw"/>
-                                    <barButtonItem systemItem="pause" id="fT9-qa-nH6"/>
+                                    <barButtonItem systemItem="pause" id="fT9-qa-nH6">
+                                        <connections>
+                                            <action selector="pauseButton:" destination="BYZ-38-t0r" id="3mJ-pJ-0jc"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3W-ht-r7H">
@@ -60,6 +72,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wvY-QM-aBP" secondAttribute="bottom" id="qmk-Ye-2fn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="W3W-ht-r7H" id="rLi-Zg-pMX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

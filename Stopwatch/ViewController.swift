@@ -9,6 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var timerLabel: UILabel!
+    
+    @IBAction func playButton(sender: AnyObject) {
+    }
+    
+    @IBAction func stopButton(sender: AnyObject) {
+    }
+    
+    @IBAction func pauseButton(sender: AnyObject) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
