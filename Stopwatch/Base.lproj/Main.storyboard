@@ -24,7 +24,9 @@
                                     <constraint firstAttribute="height" constant="44" id="vds-0Q-NFL"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Stopwatch" id="ZXR-lc-9r9"/>
+                                    <navigationItem title="Stopwatch" id="ZXR-lc-9r9">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="Omr-ep-niP"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wvY-QM-aBP">
@@ -33,7 +35,9 @@
                                     <constraint firstAttribute="height" constant="44" id="Ben-4i-gJl"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Item" id="BtT-gb-mQZ"/>
+                                    <barButtonItem systemItem="stop" id="BtT-gb-mQZ"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="coA-wO-fKw"/>
+                                    <barButtonItem systemItem="pause" id="fT9-qa-nH6"/>
                                 </items>
                             </toolbar>
                         </subviews>
