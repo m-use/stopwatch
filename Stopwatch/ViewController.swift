@@ -31,9 +31,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopButton(sender: AnyObject) {
+        
+        
+        
     }
     
     @IBAction func pauseButton(sender: AnyObject) {
+        
+        timer.invalidate()
+        
     }
 
     override func viewDidLoad() {
