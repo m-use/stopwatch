@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         time++
         
-        timerLabel.text = String(time)
+        timerLabel.text = "\(time)"
         
     }
     
@@ -32,7 +32,9 @@ class ViewController: UIViewController {
     
     @IBAction func stopButton(sender: AnyObject) {
         
-        
+        timer.invalidate()
+        time = 0
+        timerLabel.text = "0"
         
     }
     
