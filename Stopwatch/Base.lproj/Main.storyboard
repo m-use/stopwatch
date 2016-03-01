@@ -40,12 +40,21 @@
                                     <barButtonItem systemItem="pause" id="fT9-qa-nH6"/>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3W-ht-r7H">
+                                <rect key="frame" x="20" y="130" width="560" height="178"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7fu-HY-gjj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6Ox-zU-BK7"/>
                             <constraint firstItem="7fu-HY-gjj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7MZ-fc-cDQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wvY-QM-aBP" secondAttribute="trailing" constant="-20" id="89f-Mu-TVZ"/>
+                            <constraint firstItem="W3W-ht-r7H" firstAttribute="top" secondItem="7fu-HY-gjj" secondAttribute="bottom" constant="66" id="MsG-1q-A0l"/>
+                            <constraint firstItem="W3W-ht-r7H" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Oh9-0n-HZZ"/>
+                            <constraint firstItem="W3W-ht-r7H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YwK-YQ-1Ax"/>
                             <constraint firstItem="wvY-QM-aBP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cey-4W-P03"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7fu-HY-gjj" secondAttribute="trailing" constant="-20" id="hep-CS-WCz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wvY-QM-aBP" secondAttribute="bottom" id="qmk-Ye-2fn"/>
@@ -54,6 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="385" y="334"/>
         </scene>
     </scenes>
 </document>
